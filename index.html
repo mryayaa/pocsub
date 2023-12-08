@@ -1,21 +1,45 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>poc by redhatdz</title>
-    <link href="style.css" rel="stylesheet" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
 
-  <body>
-    <div class="container">
-      <div class="header">
-        <h3>  poc</h3>
-        <h1>poc by redhatdz</h1>
-      
- 
-        
-      </div>
-    </div>
-  </body>
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="product">
+    <h2>Product Name</h2>
+    <p>Description of the product goes here.</p>
+    <p>Price: $19.99</p>
+    <button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<script>
+    function addToCart() {
+        alert('Product added to cart!');
+        // You can add more logic here to handle the addition to the cart.
+    }
+</script>
+
+</body>
 </html>
